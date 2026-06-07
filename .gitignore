@@ -1,0 +1,42 @@
+# Raw course data (large; see data/README.md)
+data/*.csv
+data/**/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Stata
+*.dta
+*.smcl
+
+# Logs and temp
+*.log
+phase1_baseline/_run_*.py
+phase1_baseline/ShareA_*.csv
+phase1_baseline/Mkt_Rf_Daily.csv
+
+# Pipeline outputs (regenerated)
+phase1_baseline/IVOL_Beta_Result.csv
+phase1_baseline/ShareA_MonthlyData_IVOL_Beta.csv
+phase1_baseline/Series_Group_Rt_VW.csv
+phase1_baseline/*_Result*.csv
+phase1_baseline/yearly_double_sort.csv
+phase2_asymmetry/SKEW_ISKEW_IE_Result.csv
+phase3_chen/data/*.csv
+phase3_chen/data/*.dta
+
+# Charts / presentations (not part of replication code)
+**/*.pptx
+phase1_baseline/*.png
+phase2_asymmetry/*.png
+**/ppt_assets/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
